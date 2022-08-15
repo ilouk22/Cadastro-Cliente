@@ -1,0 +1,147 @@
+
+package cadastro.pkgdo.cliente;
+
+import java.util.Scanner;
+
+public class CadastroDoCliente {
+    //Atributos
+        String Nome;
+        long DataNascimento[] = new long[3];
+        String Genero;
+        String CidadeNatal;
+        String CidadeAtual;
+        String Endereco[] = new String[3];
+        String Email;
+        String NomePai;
+        String NomeMae;
+        long CPF;
+        long RG;
+        long Tel;
+        String EstadoCivil;
+        int PossuiDef;
+
+    //Metodos
+        public void cadastrar(){
+          
+        }
+        public void atualizar(){
+            
+        }
+        public void excluir(){
+            
+        }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public long[] getDataNascimento() {
+        return DataNascimento;
+    }
+
+    public void setDataNascimento(long[] DataNascimento) {
+        this.DataNascimento = DataNascimento;
+    }
+
+    public String getGenero() {
+        return Genero;
+    }
+
+    public void setGenero(String Genero) {
+        this.Genero = Genero;
+    }
+
+    public String getCidadeNatal() {
+        return CidadeNatal;
+    }
+
+    public void setCidadeNatal(String CidadeNatal) {
+        this.CidadeNatal = CidadeNatal;
+    }
+
+    public String getCidadeAtual() {
+        return CidadeAtual;
+    }
+
+    public void setCidadeAtual(String CidadeAtual) {
+        this.CidadeAtual = CidadeAtual;
+    }
+
+    public String[] getEndereco() {
+        return Endereco;
+    }
+
+    public void setEndereco(String[] Endereco) {
+        this.Endereco = Endereco;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+
+    public String getNomePai() {
+        return NomePai;
+    }
+
+    public void setNomePai(String NomePai) {
+        this.NomePai = NomePai;
+    }
+
+    public String getNomeMae() {
+        return NomeMae;
+    }
+
+    public void setNomeMae(String NomeMae) {
+        this.NomeMae = NomeMae;
+    }
+
+    public long getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(long CPF) {
+        this.CPF = CPF;
+    }
+
+    public long getRG() {
+        return RG;
+    }
+
+    public void setRG(long RG) {
+        this.RG = RG;
+    }
+
+    public long getTel() {
+        return Tel;
+    }
+
+    public void setTel(long Tel) {
+        this.Tel = Tel;
+    }
+
+    public String getEstadoCivil() {
+        return EstadoCivil;
+    }
+
+    public void setEstadoCivil(String EstadoCivil) {
+        this.EstadoCivil = EstadoCivil;
+    }
+
+    public int getPossuiDef() {
+        return PossuiDef;
+    }
+
+    public void setPossuiDef(int PossuiDef) {
+        this.PossuiDef = PossuiDef;
+    }
+        
+    }
+    
