@@ -1,0 +1,88 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package cadastro.pkgdo.cliente;
+
+import java.io.PrintStream;
+import java.util.Scanner;
+
+/**
+ *
+ * @author uilia
+ */
+public class Pessoa {
+    public static void main(String[] args)  {
+        Scanner ler = new Scanner(System.in);
+        Scanner ler1 = new Scanner(System.in);
+        Scanner ler2 = new Scanner(System.in);
+        CadastroDoCliente c1 = new CadastroDoCliente();
+            System.out.print("Qual nome: ");
+            c1.Nome = ler.nextLine();
+            System.out.println("Data de Mascimento");
+            System.out.print("Dia: ");
+            c1.DataNascimento[0] = ler1.nextLong();
+            System.out.print("Mês: ");
+            c1.DataNascimento[1] = ler1.nextLong();
+            System.out.print("Ano: ");
+            c1.DataNascimento[2] = ler1.nextLong();
+            System.out.print("Qual gênero (F) Feminino (M) Masculino: ");
+            c1.Genero = ler.nextLine();
+            {
+            if(c1.Genero == "F"){
+                c1.Genero = "Feminino";
+            }else if(c1.Genero == "M"){
+                c1.Genero = "Masculino";
+            }
+            }
+            System.out.print("Qual sua cidade natal: ");
+            c1.CidadeNatal = ler.nextLine();
+            System.out.print("Qual sua cidade atual: ");
+            c1.CidadeAtual = ler.nextLine();
+            System.out.print("Qual bairro: ");
+            c1.Endereco[0] = ler.nextLine();
+            System.out.print("Qual rua: ");
+            c1.Endereco[1] = ler.nextLine();
+            System.out.print("Qual numero da casa: ");
+            c1.Endereco[2] = ler.nextLine();
+            System.out.print("Escreva o e-mail: ");
+            c1.Email = ler.nextLine();
+            System.out.println("Escreva o nome da sua mãe (n) para não tenho: ");
+            c1.NomeMae = ler.nextLine();
+            if(c1.NomeMae == "n"){    
+            }
+            System.out.println("Escreva o nome do seu pai: ");
+            c1.NomePai = ler.nextLine();
+            System.out.println("Digite o CPF por extenso: ");
+            c1.CPF = ler1.nextLong();
+            System.out.println("Digite o RG por extenso: ");
+            c1.RG = ler1.nextLong();
+            System.out.println("Digite seu telefone com DDD: ");
+            c1.Tel = ler.nextLong();
+            System.out.println("Digite estado civil: \n Solteiro(a) \n Casado(a) \n Divorciado(a) \n Viúvo(a)");
+            c1.EstadoCivil = ler.nextLine();
+            System.out.print("Possui deficiência (1) NÃO (2) SIM: ");
+            c1.PossuiDef = ler1.nextInt();
+            if(c1.PossuiDef == 1){
+            System.out.println(
+                    "Nome: " + c1.Nome + "\n" +
+                            "Data de nascimento: " + c1.DataNascimento[0]+"/"+ c1.DataNascimento[1]+"/"+ c1.DataNascimento[2] +"\n"+
+                            "Genêro: " + c1.Genero+"\n"+
+                            "Cidade natal: " + c1.CidadeNatal+"\n"+
+                            "Cidade atual: " + c1.CidadeAtual+"\n"+
+                            "Bairro: " + c1.Endereco[0] +"\n"+
+                            "Rua: " + c1.Endereco[1] +"\n"+
+                            "Número: " + c1.Endereco[2]+"\n"+
+                            "E-mail: " + c1.Email+"\n"+
+                            "Nome da mãe: " + c1.NomeMae+"\n"+
+                            "Nome do pai: " + c1.NomePai+"\n"+
+                            "CPF: " + c1.CPF+"\n"+
+                            "RG: " + c1.RG+"\n"+
+                            "TEL: " + c1.Tel+"\n"+
+                            "Estado civil: " + c1.EstadoCivil+"\n");
+            }else if(c1.PossuiDef == 2){
+                System.out.println("Cadastre um responsavel. ");
+            }
+            }
+            }
